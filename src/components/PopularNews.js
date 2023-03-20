@@ -1,42 +1,36 @@
 import axios from 'axios';
-
-// const searchTopNews = async (term) => {
-// 	const topResponse = await axios.get('https://newsapi.org/v2/top-headlines?q=term', {
-//       headers: {
-//       	Authorization: "Bearer 5de73c6ffb9d410ea260605dce98197f"
-//     }
-// });
-// console.log(topResponse);
-// return topResponse.data.articles;	 
-// };
+import { useState} from 'react';
 
 let api = "https://newsapi.org/v2/top-headlines?q="
 let term = ''
 let api_key = "&apiKey=5de73c6ffb9d410ea260605dce98197f"
 
+// function App() {
+// 	// const [articles, setArticles] = useState([]);
+	
+// 	const handleSubmit = async (term) => {
+// 	  const result = await searchAllNews(term);
+	  
+// 	  setArticles(result);
+// };
 
-const PopularNews = async (term) => {
+function PopularNews() {
+  const [news, setNews] = useState([]);
+
+  const Popular = async (term) => {
 	const allResponse = await axios.get(api + term + api_key, {
       headers: {
       	Authorization: "Bearer 5de73c6ffb9d410ea260605dce98197f"
-    }
-});
-
-console.log(allResponse);
-
-return allResponse.data.articles;	 
+      }
+    });
+	setNews(allResponse)
+  }
 };
+
+// console.log(allResponse);
+
+// return allResponse.data.articles;	 
+// };
 
 export default PopularNews; 
 
-// function MainNewsFeed() {
-// 	return <div>MainNewsFeed</div>;
-// }
-
-// export default MainNewsFeed;
-
-// function PopularNews() {
-// 	return <div>PopularNews</div>;
-// }
-
-// export default PopularNews;
