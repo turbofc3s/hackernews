@@ -1,8 +1,9 @@
-import { useState} from 'react';
+import { useState, useEffect} from 'react';
 import SearchBar from './components/SearchBar';
 import searchAllNews from './api';
 import ArticleList from './components/ArticleList';
-import PopularNews from './components/PopularNews';
+// import PopularNews from './components/PopularNews';
+// import ArticleList2 from './components/ArticleList2';
 
 function App() {
 	const [articles, setArticles] = useState([]);
@@ -13,13 +14,17 @@ function App() {
 	  setArticles(result);
 };
 
+useEffect(() => {
+	searchAllNews()
+}, []);
+
 return (
 	<div>
 	  <SearchBar onSubmit={handleSubmit} />
 	  <ArticleList articles={articles} />
-	  <PopularNews />
-	</div>
+	 </div>
     );
 }
 
 export default App;
+
