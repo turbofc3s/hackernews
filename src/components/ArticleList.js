@@ -9,4 +9,4 @@ function ArticleList({articles}) {
 	return <div>{renderedArticles}</div>;
 }
 
-export default ArticleList
+export default ArticleList;

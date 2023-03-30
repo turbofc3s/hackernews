@@ -11,7 +11,7 @@ const searchAllNews = async (term = 'mars') => {
       },
     });
 
-    console.log(allResponse);
+    console.log(allResponse.data.articles);
 
     return allResponse.data.articles;
 };
