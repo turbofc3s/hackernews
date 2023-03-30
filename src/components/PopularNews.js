@@ -26,8 +26,12 @@ function PopularNews() {
 
   return (
     <div>
-      articles}
-      console.log(articles)
+       articles.map(article => {
+        <div>
+            <a href=article.url>article.title</a>
+        </div>
+
+      })
     </div>
     )
   };  

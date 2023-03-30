@@ -29,7 +29,7 @@ return (
            <ArticleList articles={articles} />
 	     </div>
 	     <div className="side-articles">  
-	       <PopularNews />
+	       <PopularNews  />
 	     </div>
 	    </div>
 	 </div>
