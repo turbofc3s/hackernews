@@ -1,5 +1,6 @@
 import axios from 'axios';
 import {useState, useEffect} from 'react';
+import PopularHtml from './PopularHtml'
 
 function PopularNews() {
   let api = "https://newsapi.org/v2/top-headlines?q="
@@ -26,16 +27,17 @@ function PopularNews() {
 
   return (
     <div>
-       articles.map(article => {
-        <div>
-            <a href=article.url>article.title</a>
-        </div>
+      const renderedNewArticles = articles.map((article, index) => {
+        return <PopularHtml key={index} article={article} />;   
+      });
 
-      })
+      return <div>{renderedNewArticles}</div>
     </div>
     )
-  };  
+  }
 
 export default PopularNews; 
+
+
 
 
