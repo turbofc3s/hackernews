@@ -1,6 +1,8 @@
 import axios from 'axios';
 import {useState, useEffect} from 'react';
-import PopularHtml from './PopularHtml'
+import PopularHtml from './PopularHtml';
+import ArticleList2 from './ArticleList2';
+
 
 function PopularNews() {
   let api = "https://newsapi.org/v2/top-headlines?q="
@@ -15,7 +17,7 @@ function PopularNews() {
       	  Authorization: "Bearer 5de73c6ffb9d410ea260605dce98197f"
         }
     });
-        console.log(allResponse.data.articles)
+        console.log(allResponse)
         return (allResponse.data.articles)
        // console.log(allResponse) 
     setArticles(allResponse.data.articles)
@@ -26,17 +28,14 @@ function PopularNews() {
    }, []);
 
   return (
-    <div>
-      const renderedNewArticles = articles.map((article, index) => {
-        return <PopularHtml key={index} article={article} />;   
-      });
-
-      return <div>{renderedNewArticles}</div>
-    </div>
-    )
-  }
+   <div>
+     <ArticleList2 articles={articles} />
+   </div> 
+  )
+}
 
 export default PopularNews; 
+
 
 
 

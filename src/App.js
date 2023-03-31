@@ -3,7 +3,7 @@ import SearchBar from './components/SearchBar';
 import searchAllNews from './api';
 import ArticleList from './components/ArticleList';
 import PopularNews from './components/PopularNews';
-// import ArticleList2 from './components/ArticleList2';
+import ArticleList2 from './components/ArticleList2';
 import './App.css'
 
 function App() {
@@ -29,7 +29,8 @@ return (
            <ArticleList articles={articles} />
 	     </div>
 	     <div className="side-articles">  
-	       <PopularNews  />
+	       <ArticleList2 articles={articles} />
+	       <PopularNews />
 	     </div>
 	    </div>
 	 </div>

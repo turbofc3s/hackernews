@@ -1,3 +1,5 @@
+
+
 function MainNewsFeed({article}) {
 	return (
 	  <div>        
