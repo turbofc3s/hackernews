@@ -18,9 +18,8 @@ function PopularNews() {
         }
     });
         console.log(allResponse)
-        return (allResponse.data.articles)
-       // console.log(allResponse) 
-    setArticles(allResponse.data.articles)
+     
+     setArticles(allResponse.data.articles)
   }
   
   useEffect(() => {

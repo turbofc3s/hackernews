@@ -1,9 +1,8 @@
-
-
 function MainNewsFeed({article}) {
 	return (
-	  <div>        
-        <a href={article.url}>{article.title}</a>
+	  <div>
+	    <img src={article.urlToImage} />        
+        <a href={article.url} target="_blank">{article.title}</a>
 	  </div>
 	);  
 }
