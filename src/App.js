@@ -22,6 +22,7 @@ function App() {
 return (
   <div>
     <div className="search">
+      <h1>Current News Articles</h1>
 	  <SearchBar onSubmit={fetchNews} />
 	</div>
 	<div className="both-articles">
