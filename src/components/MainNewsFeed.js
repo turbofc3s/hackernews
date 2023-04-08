@@ -1,4 +1,5 @@
 function MainNewsFeed({article}) {
+
 	return (
 	  <div>
 	    <div className="ind-article">

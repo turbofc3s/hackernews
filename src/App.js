@@ -3,7 +3,6 @@ import SearchBar from './components/SearchBar';
 import searchAllNews from './api';
 import ArticleList from './components/ArticleList';
 import PopularNews from './components/PopularNews';
-import ArticleList2 from './components/ArticleList2';
 import './App.css'
 
 function App() {

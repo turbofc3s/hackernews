@@ -1,6 +1,5 @@
 import MainNewsFeed from './MainNewsFeed'; 
 
-
 function ArticleList({articles}) {
 
 	const renderedArticles = articles.map((article, index) => {

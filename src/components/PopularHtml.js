@@ -1,4 +1,6 @@
 function PopularHtml({article}) {
+	if (!article.urlToImage === null)
+
 	return (
 	  <div>
 	    <div className="ind-article">
@@ -11,3 +13,5 @@ function PopularHtml({article}) {
 }
 
 export default PopularHtml;
+
+
