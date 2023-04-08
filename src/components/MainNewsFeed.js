@@ -1,4 +1,7 @@
 function MainNewsFeed({article}) {
+	if(article.urlToImage) {
+    // console.log(article.urlToImage)
+
 
 	return (
 	  <div>
@@ -9,7 +12,7 @@ function MainNewsFeed({article}) {
 	  </div>
 	);  
 }
-
+}
 export default MainNewsFeed;
 
 

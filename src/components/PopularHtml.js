@@ -1,5 +1,6 @@
 function PopularHtml({article}) {
-	if (!article.urlToImage === null)
+	if(article.urlToImage) {
+    // console.log(article.urlToImage)
 
 	return (
 	  <div>
@@ -10,6 +11,7 @@ function PopularHtml({article}) {
 	  </div>
 
 	);  
+}
 }
 
 export default PopularHtml;
