@@ -22,7 +22,7 @@ function PopularNews() {
   
   useEffect(() => {
     topNews()
-   }, []);
+   },);
 
   return (
    <div>
