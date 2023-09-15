@@ -1,4 +1,4 @@
-## HackerNews Clone
+ HackerNews Clone
 
 ## Project Description
 A News App clone built. This app uses GET requests to get and display the top-news of the site in one section and uses a search functionality to display whatever news that corresponds with what the types in. 
