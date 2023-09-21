@@ -10,8 +10,12 @@ When the page loads there are news articles popoulating a certain portion of the
 React, Npm start, Css
 
 ## Quick Start
-npx create-react-app hackernews
+ to download the app 
+ 
+1. git clone
+ 
+2. cd into hackernews
 
-cd hackernews
-
-npm start to start up the development server
+3. npm install
+   
+4. npm start 
