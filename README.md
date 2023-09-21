@@ -7,7 +7,7 @@ A News App clone built. This app uses GET requests to get and display the top-ne
 When the page loads there are news articles popoulating a certain portion of the ui. These articles update as the current top news of the site changes.  There is a also an input box for the user to search for news based on what is enetered that will display in another area of the screen.  
 
 ## Technologies Used
-React, News Api, Css
+React, News Api, Css, Axios
 
 ## Quick Start
  to download the app 
