@@ -1,4 +1,4 @@
-## News App
+## CurrentSphere News
 
 ## Project Description
 A News App clone built with REACT that uses the News API and React hooks.  It has a search functionality that integrates with the News Api . 
