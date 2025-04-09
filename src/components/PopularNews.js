@@ -10,9 +10,9 @@ function PopularNews() {
   const [articles, setArticles] = useState([]);
 
   const topNews = async (term = 'trump') => {    
-	  const allResponse = await axios.get(api + term + api_key, {
+    const allResponse = await axios.get(api + term + api_key, {
         headers: {
-      	  Authorization: "Bearer 5de73c6ffb9d410ea260605dce98197f"
+          Authorization: "Bearer 5de73c6ffb9d410ea260605dce98197f"
         }
     });
         console.log(allResponse)
@@ -21,8 +21,9 @@ function PopularNews() {
   }
   
   useEffect(() => {
-    topNews()
-   },);
+    topNews();
+  }, []);
+
 
   return (
    <div>

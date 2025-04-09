@@ -1,7 +1,6 @@
 function PopularHtml({article}) {
-	if(article.urlToImage) {
-    // console.log(article.urlToImage)
-
+  if(article.urlToImage) {
+    
 	return (
 	  <div>
 	    <div className="ind-article">
@@ -9,9 +8,8 @@ function PopularHtml({article}) {
 	      <h3><a href={article.url} target="_blank" rel="noreferrer">{article.title}</a></h3>
         </div>  
 	  </div>
-
 	);  
-}
+  }
 }
 
 export default PopularHtml;

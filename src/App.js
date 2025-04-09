@@ -1,4 +1,5 @@
 import { useState, useEffect} from 'react';
+import Navbar from './components/Navbar';
 import SearchBar from './components/SearchBar';
 import searchAllNews from './api';
 import ArticleList from './components/ArticleList';
@@ -20,15 +21,14 @@ function App() {
 
 return (
   <div>
-    <div className="search">
-      <h1>Current News Articles</h1>
+    <div className="search">         
 	  <SearchBar onSubmit={fetchNews} />
 	</div>
 	<div className="both-articles">
 	  <div className="main-articles">  
         <ArticleList articles={articles} />
 	  </div>
-	  <div className="side-articles">  
+	  <div className='side-articles'>  
 	    <PopularNews />
 	  </div>
 	</div>
